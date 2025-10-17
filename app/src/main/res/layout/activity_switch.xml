@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SwitchActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <RadioGroup
+            android:id="@+id/rgOpciones"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/rbCamara"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir CamaraActivity" />
+
+            <RadioButton
+                android:id="@+id/rbPerfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Abrir PerfilActivity" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnAbrir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Abrir según opción" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
